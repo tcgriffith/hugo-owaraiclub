@@ -1,10 +1,10 @@
 name = "Hugo-owaraicub"
 license = "MIT"
 licenselink = "https://github.com/tcgriffith/hugo-owaraiclub/blob/master/LICENSE"
-description = "A site for variety shows/talents/"
+description = "A simple hugo theme inspired by hugo-xmag"
 homepage = "https://github.com/tcgriffith/hugo-owaraiclub/"
-tags = [minimal, xmag]
-features = [responsive, no-js, githubwiki]
+tags = ["blog", "minimal"]
+features = ["responsive", "wiki"]
 min_version = "0.41"
 
 [author]
