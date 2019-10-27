@@ -11,3 +11,5 @@ hugo-owaraiclub is inspired by [yihui'shugo-xmag](https://github.com/yihui/hugo-
 - Minimal, no javascript.
 - A cute author card
 
+
+

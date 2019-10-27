@@ -5,7 +5,7 @@ description = "A simple hugo theme inspired by hugo-xmag"
 homepage = "https://github.com/tcgriffith/hugo-owaraiclub/"
 tags = ["blog", "minimal"]
 features = ["responsive", "wiki"]
-min_version = "0.41"
+min_version = "0.58"
 
 [author]
   name = "TC"
