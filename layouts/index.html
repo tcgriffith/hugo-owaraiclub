@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div class="container article-container home-container">
+    <div class="article-rightbar ">
+        {{ if gt (len .Content ) 0 }}
+        <div class="article-rightbar-child roundit shadowbox container1em">
+            <div class="article-content">
+                {{ .Content }}
+            </div>
+        </div>
+        {{ end }}
+        <div class="article-rightbar-child roundit tagcloud shadowbox container1em">
+            {{ partial "tag_cloud.html" .}}
+        </div>
+    </div>
+    <div class="article-metamain">
+        <div class="roundit  container1em shadowbox">
+            <h4>Featured</h4>
+            <main class="list flexcol">
+                {{ range first 5 (shuffle (where .Site.RegularPages "Section" "post")) }}
+                {{ partial "article_justfig.html" . }}
+                {{ end }}
+            </main>
+        </div>
+
+        {{ if $.Site.Data.authors.list }}
+        <div class="article-rightbar-child roundit container1em">
+            <h4> Authors </h4>
+            <div class="flexcol">
+                {{ range $.Site.Data.authors.list }}
+                <a href="/categories/{{ .name }}">
+                    <img class="author-img" src="{{ .image }}" alt="{{ .name }}" />
+                </a>
+                {{ end }}
+            </div>
+        </div>
+
+        {{ end }}
+    </div>
+</div>
+{{ end }}
