@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="container article-container home-container">
+    <div class="article-metamain">
+        {{ if $.Site.Data.authors.list }}
+        <div class="article-rightbar-child roundit container1em">
+            <h4> Authors </h4>
+            <div class="flexcol">
+                {{ range $.Site.Data.authors.list }}
+                <a href="{{ relURL (print "/author/" .name | urlize) }}">
+                    <img class="author-img" src="{{ .image }}" alt="{{ .name }}" />
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

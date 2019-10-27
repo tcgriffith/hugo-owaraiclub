@@ -10,7 +10,7 @@
 {{ with $.Scratch.Get "author_info" }}
 {{ range . }}
 <div class="author-card-container">
-    <a href="{{ relURL (print "/categories/" .name | urlize) }}">
+    <a href="{{ relURL (print "/author/" .name | urlize) }}">
         <div class="imgwrapper">
             <img class="author-img" src="{{ .image }}" alt="{{ .name }}" />
         </div>

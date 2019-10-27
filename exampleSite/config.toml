@@ -11,16 +11,23 @@ footnoteReturnLinkContents = "^"
 
 [menu]
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 9
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 10
 
 [taxonomies]
 category = "categories"
 tag = "tags"
 series = "series"
+author = "author"
 
 [privacy]
 

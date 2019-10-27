@@ -1,0 +1,10 @@
+list:
+  - name: Hugo Authors
+    image: /img/default.png
+    intro: A little cute author card
+  - name: author1
+    image: /img/author1.svg
+    intro: free icon from https://www.flaticon.com/free-icon/man_417746
+  - name: author2
+    image: /img/author2.svg
+    intro: free icon from https://www.flaticon.com/free-icon/man_417746
