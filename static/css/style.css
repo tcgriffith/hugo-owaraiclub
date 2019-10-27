@@ -79,7 +79,7 @@ header{
 body{
 /*banner source:*/
 /*https://pixabay.com/photos/nature-animals-bird-migratory-bird-2746726/*/
-    background: url(/img/banner.jpg) no-repeat;
+    
     background-size: 100% auto;
     background-attachment: fixed;
     background-position: right 60px;

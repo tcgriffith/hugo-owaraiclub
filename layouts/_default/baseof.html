@@ -4,7 +4,7 @@
     {{ partial "sidebar.html" . }}
     {{- partial "header" . -}}
     
-    <body>
+    <body style="background: url('{{ "img/banner.jpg" | absURL }}')">
         <div id="main">
         {{- block "main" . }}{{- end }}
         {{- partial "footer.html" . -}}
