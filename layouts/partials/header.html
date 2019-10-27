@@ -1,13 +1,16 @@
 <header>
     <section class="intro">
         <div class="intro-container">
-            <div class="row">
+            <div class="row" style="background: url('{{ "img/banner.jpg" | absURL }}') no-repeat; background-attachment: fixed;background-position: right 60px;">
                 {{ with .Site.Params.banner }}
                 {{ range .source }}
                 <source media="{{ .media }}" srcset="{{ relURL .srcset }}">{{ end }}
                 <a href="/">
-                    <img id="bannerlogo" src="{{ relURL .src }}" alt="{{ .alt }}">
+                    <img id="bannerlogo" src="{{ .src | absURL }}" alt="{{ .alt }}">
                 </a>
+                {{ else }}
+                <!-- yihui's black magic! -->
+                <h1 style="color: white; font-size: 8rem" id="bannerlogo">{{ (replaceRE "(&[A-Z]) (fr;)" "$1$2" (replaceRE "([A-Z])" "&$1 fr;" (upper .Site.Title))) | safeHTML }}</h1>
                 {{ end }}
             </div>
         </div>
