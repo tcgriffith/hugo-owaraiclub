@@ -23,6 +23,24 @@ footnoteReturnLinkContents = "^"
   url = "/about/"
   weight = 10
 
+[[menu.side]]
+  identifier = "tags"
+  name = "TAGS"
+  url = "/tags"
+  weight = 1
+
+[[menu.side]]
+  identifier = "CATEGORIES"
+  name = "CATEGORIES"
+  url = "/categories/"
+  weight = 2
+
+[[menu.side]]
+  identifier = "AUTHORS"
+  name = "AUTHORS"
+  url = "/author/"
+  weight = 3
+
 [taxonomies]
 category = "categories"
 tag = "tags"
