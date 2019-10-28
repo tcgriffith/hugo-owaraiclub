@@ -21,4 +21,6 @@ Hope you like it.
 
 ![](https://raw.githubusercontent.com/tcgriffith/hugo-owaraiclub/master/images/screenshot.png)
 
+## Demo
 
+[Examplesite on netlify](https://hugo-owaraiclub-demo.netlify.com/)
