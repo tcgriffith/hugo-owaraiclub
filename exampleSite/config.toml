@@ -1,4 +1,4 @@
-baseURL = "https://gohugo.io/"
+baseURL = "/"
 title = "Hugo owaraiclub theme"
 theme= "hugo-owaraiclub"
 author = "Steve Francia"
