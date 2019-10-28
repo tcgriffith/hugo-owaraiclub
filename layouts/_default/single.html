@@ -1,22 +1,14 @@
 {{ define "main" }}
 <div class="article-container container">
-
     {{ if .Params.nometa }}
     {{ else }}
-
-
-
     <div class="article-rightbar">
-
-
         <div class="article-rightbar-child  ">
             {{ partial "author_card.html" .}}
         </div>
-
-
         {{ if .Params.tags }}
-            <div class="article-rightbar-child roundit  container1em ">
-                <div class="card-container ">
+        <div class="article-rightbar-child roundit  container1em ">
+            <div class="card-container ">
                 <h2> Tags </h2>
                 <p class="tags taxonomy-cloud">
                     {{ range $i, $e := .Params.tags }}
@@ -24,15 +16,16 @@
                     <a href="{{ relURL (print "/tags/" $e | urlize) }}">{{ $e }}</a>
                     {{ end }}
                 </p>
-                </div>
             </div>
+        </div>
         {{ end }}
-
+        {{ if .Params.toc }}
+        <div class="sidetoc">
+            {{ partial "toc_fixed.html" .}}
+        </div>
+        {{ end }}
     </div>
-
     {{ end }}
-
-
     <div class="article-metamain roundit ">
         <div class="article-meta">
             <h1><span class="title">{{ .Title }}</span></h1>
